@@ -19,8 +19,8 @@ function creategrids(grid){
 }
 
 document.querySelector("button").addEventListener("click",function(){
-    var gridnum = prompt("No of grids(0 - 100):")
-    if(gridnum>0 || gridnum<=100){
+    var gridnum = parseInt(prompt("No of grids(0 - 100):"));
+    if(gridnum>0 && gridnum <=100){
         creategrids(gridnum)
     }
     else{
